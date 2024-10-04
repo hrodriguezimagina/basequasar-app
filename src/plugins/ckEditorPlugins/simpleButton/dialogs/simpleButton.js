@@ -125,7 +125,8 @@ class SimpleButton {
 				},
 
 				onOk: function () {
-					const b = editor.document.createElement('a')
+					const b = editor.document.createElement('button')
+					b.setAttribute('type', 'button')
 		 			b.setAttribute('class', btn.className)
 		 			b.appendText(btn.text)
 		 			b.setAttribute('href', (btn.url.length > 2 ? btn.url : '#'))				
