@@ -57,6 +57,7 @@
     "copy-webpack-plugin": "^6.4.1",
     "dotenv": "^6.0.0",
     "eslint": "^8.30.0",
+    "firebase": "^10.8.0",
     "install": "^0.13.0",
     "json-editor-vue": "^0.8.0",
     "lamejs": "^1.2.0",
