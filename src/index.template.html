@@ -10,58 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shepherd.js@10.0.1/dist/css/shepherd.css"/>
   </head>
   <body>
-    <!-- DO NOT touch the following DIV  www -->
+    <!-- DO NOT touch the following DIV -->
     <div id="q-app"></div>
-    <!-- firebase -->
-     <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-analytics.js";
- /// import { getFirestore } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-firestore.js";
-  import { getAuth } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-auth.js";
-  import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-messaging.js";
-
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyC0jZzyqpnCAGGlppuEFwSkGJQ8uxEtwVU",
-    authDomain: "testing-b14e2.firebaseapp.com",
-    projectId: "testing-b14e2",
-    storageBucket: "testing-b14e2.firebasestorage.app",
-    messagingSenderId: "539434867063",
-    appId: "1:539434867063:web:ebc44c047d339d8e00e972",
-    measurementId: "G-BG0KGGDVBP"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-
-  const auth = getAuth(app); 
-  const messaging = getMessaging(app);
-  
-
-  const fireBaseKey = "BKduc-2XFPje0-98e7S3bQrX3LNImn2RcpmmuszBOAz6J-aSRe8"
-
-  getToken(messaging, { vapidKey: fireBaseKey }).then((currentToken) => {
-  if (currentToken) {
-    console.log(currentToken)
-  } else {
-    // Show permission request UI
-    console.log('No registration token available. Request permission to generate one.');
-    // ...
-  }
-}).catch((err) => {
-  console.log('An error occurred while retrieving token. ', err);
-  // ...
-});
- 
-  
-  
-  
-</script>
   </body>
 </html>
